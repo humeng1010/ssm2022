@@ -1,11 +1,18 @@
 package com.meng.service.impl;
 
 import com.meng.dao.BookDao;
-import com.meng.dao.impl.BookDaoImpl;
 import com.meng.service.BookService;
 
 public class BookServiceImpl implements BookService {
-    private BookDao bookDao = new BookDaoImpl();
+    //解耦合
+//    private BookDao bookDao = new BookDaoImpl();
+    private BookDao bookDao;
+
+    //提供对应的set方法
+    public void setBookDao(BookDao bookDao) {
+        this.bookDao = bookDao;
+    }
+
     @Override
     public void save() {
         bookDao.save();

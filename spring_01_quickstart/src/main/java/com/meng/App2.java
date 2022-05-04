@@ -14,7 +14,8 @@ public class App2 {
 
         //调用
 //        bookDao.save();
-        BookService bookService = applicationContext.getBean("bookService", BookService.class);
+//        BookService bookService = applicationContext.getBean("bookService", BookService.class);
+        BookService bookService = (BookService) applicationContext.getBean("bookService");
         bookService.save();
     }
 }
