@@ -1,6 +1,5 @@
 package com.meng;
 
-import com.meng.dao.BookDao;
 import com.meng.service.BookService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
