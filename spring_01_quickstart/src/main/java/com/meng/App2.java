@@ -15,6 +15,7 @@ public class App2 {
 //        bookDao.save();
 //        BookService bookService = applicationContext.getBean("bookService", BookService.class);
         BookService bookService = (BookService) applicationContext.getBean("bookService");
+        //NoSuchBeanDefinitionException 如果出现了这个报错就是没有这个bean，我们就检查bean的名称是否一致
         bookService.save();
     }
 }

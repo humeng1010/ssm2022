@@ -5,9 +5,14 @@
 
 <!--    配置对应的bean-->
     <!--  dao  -->
-    <bean id="bookDao" class="com.meng.dao.impl.BookDaoImpl"/>
+    <!--  bean中的属性：
+            id：当前bean的唯一标识
+            class：要实现的bean对应的类路径
+            name：当前bean的别名(不过还是建议用id引用)
+    -->
+    <bean id="bookDao" class="com.meng.dao.impl.BookDaoImpl" name="dao" scope="prototype"/>
     <!--  service  -->
-    <bean id="bookService" class="com.meng.service.impl.BookServiceImpl">
+    <bean id="bookService" class="com.meng.service.impl.BookServiceImpl" name="service,sss">
         <!--    配置service与dao的关系    -->
         <!--    property标签表示配置当前bean的属性-->
         <!--    name属性表示配置哪一个具体的属性    -->
