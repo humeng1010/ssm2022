@@ -5,41 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4706ef90-2c6c-465a-a42e-6fb80889941c" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__c3p0_c3p0_0_9_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_2_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_11_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_28.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_3_16.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_3_16.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_3_16.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_3_16.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_3_16.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_16.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_01_quickstart/src/main/java/com/meng/AppForAnnotation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_01_quickstart/src/main/java/com/meng/config/SpringConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_01_quickstart/src/main/resources/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_13_annotation_di/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_13_annotation_di/spring_13_annotation_di.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_13_annotation_di/src/main/java/com/meng/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_13_annotation_di/src/main/java/com/meng/App2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_13_annotation_di/src/main/java/com/meng/config/JdbcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_13_annotation_di/src/main/java/com/meng/config/SpringConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_13_annotation_di/src/main/java/com/meng/dao/BookDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_13_annotation_di/src/main/java/com/meng/dao/impl/BookDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_13_annotation_di/src/main/java/com/meng/dao/impl/BookDaoImpl2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_13_annotation_di/src/main/java/com/meng/service/BookService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_13_annotation_di/src/main/java/com/meng/service/impl/BookServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_13_annotation_di/src/main/resources/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring_01_quickstart/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring_01_quickstart/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring_01_quickstart/spring_01_quickstart.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring_01_quickstart/spring_01_quickstart.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring_01_quickstart/src/main/java/com/meng/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_01_quickstart/src/main/java/com/meng/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring_01_quickstart/src/main/java/com/meng/dao/impl/BookDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_01_quickstart/src/main/java/com/meng/dao/impl/BookDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring_01_quickstart/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring_01_quickstart/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring_01_quickstart/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring_01_quickstart/target/classes/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_13_annotation_di/src/main/java/com/meng/config/JdbcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_13_annotation_di/src/main/java/com/meng/config/JdbcConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,6 +162,7 @@
       <workItem from="1651997487019" duration="2774000" />
       <workItem from="1652059232650" duration="1284000" />
       <workItem from="1652067969804" duration="8984000" />
+      <workItem from="1652087227458" duration="847000" />
     </task>
     <servers />
   </component>
