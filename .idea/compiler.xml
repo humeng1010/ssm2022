@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring_13_annotation_di" />
         <module name="spring_01_quickstart" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="spring_01_quickstart" target="1.8" />
+      <module name="spring_13_annotation_di" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

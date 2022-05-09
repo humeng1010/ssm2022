@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       ">
 
 <!--    配置对应的bean-->
     <!--  dao  -->
@@ -10,7 +17,9 @@
             class：要实现的bean对应的类路径
             name：当前bean的别名(不过还是建议用id引用)
     -->
-    <bean id="bookDao" class="com.meng.dao.impl.BookDaoImpl" name="dao" scope="prototype"/>
+    <bean id="bookDao" class="com.meng.dao.impl.BookDaoImpl" name="dao">
+        <property name="name" value="${jdbc.url}"/>
+    </bean>
     <!--  service  -->
     <bean id="bookService" class="com.meng.service.impl.BookServiceImpl" name="service,sss">
         <!--    配置service与dao的关系    -->
@@ -19,4 +28,33 @@
         <!--    ref属性表示参照哪一个bean    -->
         <property name="bookDao" ref="bookDao"/>
     </bean>
+
+<!--    管理DruidDataSource对象-->
+<!--    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">-->
+<!--        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>-->
+<!--        <property name="url" value="jdbc:mysql://localhost:3306/spring_db"/>-->
+<!--        <property name="username" value="root"/>-->
+<!--        <property name="password" value="12345678"/>-->
+<!--    </bean>-->
+
+<!--管理 C3P0 数据库连接池-->
+<!--    <bean id="dataSource2" class="com.mchange.v2.c3p0.ComboPooledDataSource">-->
+<!--        <property name="driverClass" value="com.mysql.cj.jdbc.Driver"/>-->
+<!--        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/spring_db"/>-->
+<!--        <property name="user" value="root"/>-->
+<!--        <property name="password" value="12345678"/>-->
+<!--        <property name="maxPoolSize" value="10"/>-->
+<!--    </bean>-->
+
+<!--    1.开启context的命名空间-->
+<!--    2.使用context空间加载properties文件-->
+    <context:property-placeholder location="jdbc.properties"/>
+<!--        3.使用属性占位符 ${} 读取properties文件中的属性-->
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="driverClassName" value="${jdbc.driver}"/>
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+    </bean>
+
 </beans>
